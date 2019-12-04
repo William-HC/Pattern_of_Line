@@ -1,0 +1,32 @@
+# Datasets for basic trials:
+
+# Example of dataset 1:
+    x<-c(60,70,80,90,100,110,120,130,140,150) ; y<-c(6,8,11,14,17,20,25,31,39,44) ; d1<-data.frame(x,y)
+
+# Example of dataset 2:
+    x<-c(60,70,80,90,100,110,120,130,140,150) ; y<-c(6,7,8,10,12,15,17,18,19,20) ; d2<-data.frame(x,y)
+
+# Example of dataset 3:
+    x<-c(60,70,80,90,100,110,120,130,140,150) ; y<-c(6,7,8,10,11,11,11,10,8,7) ; d3<-data.frame(x,y)
+
+# Example of dataset 4:
+    x<-c(60,70,80,90,100,110,120,130,140,150) ; y<-c(6,7,8,9,10,11,12,13,14,15) ; d4<-data.frame(x,y)
+
+
+
+# Plots for all datasets:
+
+  par(mfrow=c(2,2))
+
+  plot( d1$y ~ d1$x ,main="Example 1")
+  lines(lowess( d1$y ~ d1$x ),col="red")
+
+  plot( d2$y ~ d2$x ,main="Example 2")
+  lines(lowess( d2$y ~ d2$x ),col="red")
+
+  plot( d3$y ~ d3$x ,main="Example 3")
+  lines(lowess( d3$y ~ d3$x ),col="red")
+
+  plot( d4$y ~ d4$x ,main="Example 4")
+  lines(lowess( d4$y ~ d4$x ),col="red")
+
